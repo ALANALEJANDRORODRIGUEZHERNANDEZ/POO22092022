@@ -8,7 +8,8 @@ package ico.fes.herencia;
  *
  * @author alan
  */
-public class Alumno extends Persona{
+public class Alumno extends Persona {
+
     private String numeroCuenta;
     private String carrera;
 
@@ -44,13 +45,22 @@ public class Alumno extends Persona{
 
     @Override
     public String toString() {
-        return super.toString()+ "Alumno{" + "numeroCuenta=" + numeroCuenta + ", carrera=" + carrera + '}';
+        return super.toString() + "Alumno{" + "numeroCuenta=" + numeroCuenta + ", carrera=" + carrera + '}';
     }
-    public void estudiar(int cantidad){
-        System.out.println(this.getNombre()+"Esta estudiando"+cantidad);
+
+    public void estudiar(int cantidad) {
+        System.out.println(this.getNombre() + "Esta estudiando" + cantidad);
     }
-    
-    
-    
-    
+    //POLIMORFISMO POR SOBREESCRITURA
+    @Override
+    public void dormir() {
+        System.out.println("El estudiante "
+                + this.getNombre() + " esta durmiendo");
+    }
+    //POLIMORFISMO POR SOBRECARGA
+
+    public void dormir( int horasEstudio ){
+        int horasDormir = 8;
+       System.out.println(this.getNombre()+" esta durmiendo "+(horasDormir - horasEstudio)+" horas");
+        }
 }
