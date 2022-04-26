@@ -20,7 +20,7 @@ public class PruebaEjemplo {
           millonario[2] = new CuentaHabiente("31+9211320","Alfredo",500000f);
             millonario[3] = new CuentaHabiente("0","Noemi",50000f);
               millonario[4] = new CuentaHabiente("31+9211320","Alan",100000f);
-        System.out.println(millonario[0]);
+       /* System.out.println(millonario[0]);
         millonario[0].retirarDinero(5000);
             System.out.println(millonario[1]);
             millonario[1].retirarDinero(5000);
@@ -30,10 +30,13 @@ public class PruebaEjemplo {
                     millonario[3].retirarDinero(5000);
                         System.out.println(millonario[4]);
                         millonario[4].retirarDinero(5000);
-         System.out.println("Lista para ver si eres un millonario premium o un millonario regular");        
+         System.out.println("Lista para ver si eres un millonario premium o un millonario regular");     */   
          for(CuentaHabiente i : millonario)
          {
+             System.out.println(i.toString());
+             i.retirarDinero(5000f);
              System.out.println(i.evaluarNivelCliente());
+             
          }                   
                           
 
