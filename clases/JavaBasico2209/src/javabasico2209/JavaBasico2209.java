@@ -20,7 +20,7 @@ public class JavaBasico2209 {
      */
     public static void main(String[] args) {
         int edad = 20;
-        System.out.println("Edad: "+edad);
+        System.out.println("Edadd: "+edad);
         Integer edad2 = new Integer(16);
         System.out.println(edad2);// TODO code application logic here
         Double y = edad2.doubleValue();
