@@ -4,6 +4,7 @@
  */
 package javabasico2209;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 
@@ -119,7 +120,7 @@ public class JavaBasico2209 {
         lista[3] = new Alumno("78231544", 2, 8.2f);
         lista[4] = new Alumno("32110584", 2, 10.0f);
         
-        for (int i = 0; i < lista.length; i++) {
+        for(int i = 0; i < lista.length; i++) {
             Alumno alumno = lista[i];
             alumno.checkPerformance();
         }
@@ -130,6 +131,39 @@ public class JavaBasico2209 {
             alumno.checkPerformance();
         }
         
+        ArrayList<Alumno> grupo2209 = new ArrayList<Alumno>();
+        grupo2209.add(new Alumno("319211320", 2, 9.6f));
+        grupo2209.add(new Alumno("99999", 2, 8.6f));
+        grupo2209.add(new Alumno("99999", 2, 7.6f));
+        grupo2209.add(new Alumno("99999", 2, 6.6f));
+        grupo2209.add(new Alumno("99999", 2, 5.6f));
+        for(Alumno i : grupo2209)
+        {System.out.println(i.toString());
+        }
+        
+        System.out.println("add con indice");
+         grupo2209.add(2,new Alumno("0", 2, 8.6f));
+        for(Alumno i : grupo2209)
+        {System.out.println(i.toString());
+        }
+        System.out.println("-*");
+        System.out.println(grupo2209.get(2));
+        System.out.println(grupo2209.remove(2));
+        System.out.println(grupo2209.get(2));
+        grupo2209.set(0, new Alumno("444", 3, 6.0f));
+        System.out.println("-*-*-*");
+        for(Alumno i : grupo2209)
+        {System.out.println(i.toString());
+        }
+        System.out.println("*/");
+        //Excepciones
+        
+        try {
+            System.out.println(grupo2209.get(20));
+        } catch (Exception e) {
+            System.out.println("error.. revisa los indices");
+        }
+        System.out.println("fin del programa");
     }
     
 }
