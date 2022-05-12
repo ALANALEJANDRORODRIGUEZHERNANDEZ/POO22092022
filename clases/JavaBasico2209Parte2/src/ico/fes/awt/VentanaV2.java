@@ -23,19 +23,19 @@ import java.awt.event.WindowEvent;
  */
 public class VentanaV2 extends Frame {
     private TextField cuadroTexto;
-    private Button boton_1;
+    private final Button boton_1;
     private Label etiqueta;
-    private FlowLayout layout;
+    private final FlowLayout layout;
 
     public VentanaV2() throws HeadlessException {
-        this.setTitle("Ventana 2 OwO");
+        this.setTitle("Ventana 2");
         this.setSize(300,220);
         
         layout = new FlowLayout(FlowLayout.LEFT);
         this.setLayout(layout);
         
         cuadroTexto = new TextField(15);
-        boton_1 = new Button("Enviar");
+        boton_1 = new Button("Envialo pana");
         etiqueta = new Label("Ingresa tu nombre");
         
         this.add(cuadroTexto);
