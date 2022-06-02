@@ -14,6 +14,6 @@ public class JavaGraficoMain {
     public static void main(String[] args) {
         //VentanaV2 window = new VentanaV2();
         VentanaSwing ventana = new VentanaSwing();
-        System.out.println();
+        
     }
 }
